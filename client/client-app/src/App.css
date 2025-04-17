@@ -1,0 +1,46 @@
+body {
+  background-color: #ffffff; /* Very light gray background */
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Styling for the unfinished tasks box */
+
+.unfinished-tasks-box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 30px auto; /* Center and add space */
+  max-width: 600px; /* Optional: limit width */
+  border: 1px solid #ddd;
+}
+
+
+/* Heading inside the unfinished tasks box */
+.unfinished-tasks-box h2 {
+  font-size: 24px; /* Slightly larger font for the heading */
+  color: #333; /* Dark gray text for readability */
+  font-weight: bold; /* Make the heading stand out */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+/* List of tasks in the unfinished tasks box */
+.unfinished-tasks-box ul {
+  list-style-type: none; /* Remove default list styling */
+  padding-left: 0; /* Remove default padding */
+}
+
+.unfinished-tasks-box li {
+  background-color: #f9f9f9; /* Light gray background for each task */
+  border-radius: 6px; /* Slightly rounded corners for each task item */
+  padding: 10px;
+  margin-bottom: 8px; /* Space between task items */
+  border: 1px solid #ddd; /* Border around each task */
+  font-size: 16px; /* Standard font size */
+  color: #333; /* Dark text for readability */
+}
+
+.unfinished-tasks-box li:last-child {
+  margin-bottom: 0; /* Remove margin from the last item */
+}

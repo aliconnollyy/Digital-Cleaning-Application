@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;  /* Light background */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.task-table-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Heading */
+h1, h2 {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+td:hover {
+  background-color: #e9ecef;
+}
+
+/* Button Styles */
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Save Button */
+.button-save {
+  background-color: #232f3b;  /* Plum color */
+  color: white;
+}
+
+.button-save:hover {
+  background-color: #232f3b;
+}
+
+.button-save.saved {
+  background-color: #7f8c8d;
+}
+
+/* Complete Button */
+.button-complete {
+  background-color: #e74c3c;  /* Red */
+  color: white;
+}
+
+.button-complete:hover {
+  background-color: #c0392b;
+}
+
+.button-complete.completed {
+  background-color: #27ae60;  /* Green */
+}
+
+/* Incomplete Button */
+.button-unable {
+  background-color: #f39c12;  /* Orange */
+  color: white;
+}
+
+.button-unable:hover {
+  background-color: #e67e22;
+}
+
+/* Tooltip Styles */
+.MuiTooltip-tooltip {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.MuiTooltip-arrow {
+  color: #2c3e50;
+}
+
+/* Input for Notes */
+input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+input[type="text"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Button for incomplete tasks at EOD */
+button.button-unable {
+  background-color: #f39c12;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+}
+
+.task-instructions-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dim background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.clickable-task {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.clickable-task:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
