@@ -52,7 +52,7 @@ const MyComponent = () => {
         });
       });
 
-      alert(`Task in ward: ${ward_number} bed: ${bed_number} updated and reassigned to ${staff_first_name} ${staff_last_name}`);
+      alert(`Task in ward: ${ward_number} bed: ${bed_number} updated and reassigned`);
     };
 
     socket.on("new task update", handleNewTaskUpdate);
